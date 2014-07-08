@@ -4,7 +4,10 @@ now=$(date +"%Y_%m_%d_%H_%s")
 alias e="subl"
 
 # better ls
-# alias ls="ls -lahG"
+alias ls="ls -lahG"
 
 # easy edit dotfiles
 alias ebash="e ${DOTFILES}"
+
+# edit apache conf
+alias econf="/etc/apache2/"
