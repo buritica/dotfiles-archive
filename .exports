@@ -1,5 +1,8 @@
+# path for dotfiles
+export DOTFILES='$HOME/my/dotfiles'
 
-# default editor and aliasexport EDITOR='subl -w'
+# default editor and alias
+export EDITOR='subl -w'
 
 # Larger bash history (allow 32³ entries; default is 500)
 export HISTSIZE=32768;
