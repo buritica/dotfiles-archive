@@ -14,7 +14,7 @@ source $ZSH/oh-my-zsh.sh
 source /opt/boxen/env.sh
 
 # source my dotfiles
-export DOTFILES='$HOME/my/dotfiles'
+export DOTFILES='~/my/dotfiles'
 source $DOTFILES/.aliases
 source $DOTFILES/.exports
 
