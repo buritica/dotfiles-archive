@@ -9,8 +9,13 @@ ZSH_THEME="geoffgarside"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git rails rvm osx lol)
 
-source $ZSH/oh-my-zsh.sh
-
+# source other profile files
+source $ZSH/oh-my-zsh.sh 
 source /opt/boxen/env.sh
+
+# source my dotfiles
+export DOTFILES='$HOME/my/dotfiles'
+source DOTFILES/.aliases
+source DOTFILES/.exports
 
 echo "dotfiles sourced"

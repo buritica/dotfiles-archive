@@ -1,0 +1,10 @@
+now=$(date +"%Y_%m_%d_%H_%s")
+
+# editor shorthand
+alias e="subl"
+
+# better ls
+alias ls="ls -lah"
+
+# easy edit dotfiles
+alias ebash="e $DOTFILES"
