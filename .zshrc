@@ -15,7 +15,7 @@ source /opt/boxen/env.sh
 
 # source my dotfiles
 export DOTFILES='$HOME/my/dotfiles'
-source DOTFILES/.aliases
-source DOTFILES/.exports
+source $DOTFILES/.aliases
+source $DOTFILES/.exports
 
 echo "dotfiles sourced"
