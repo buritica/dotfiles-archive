@@ -13,9 +13,10 @@ plugins=(git rails rvm osx lol)
 source $ZSH/oh-my-zsh.sh 
 source /opt/boxen/env.sh
 
-# source my dotfiles
-export DOTFILES='~/my/dotfiles'
-source $DOTFILES/.aliases
-source $DOTFILES/.exports
+# Load the shell dotfiles, and then some:
+for file in ~/my/dotfiles/.{exports,aliases}; do
+	[ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
 
 echo "dotfiles sourced"
