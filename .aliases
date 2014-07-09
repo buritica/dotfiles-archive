@@ -1,7 +1,11 @@
-now=$(date +"%Y_%m_%d_%H_%s")
+# go to dotfile folder
+alias dots="cd ~/my/dotfiles"
 
-# editor shorthand
-alias e="subl"
+# grep running processes
+alias pg='ps aux | grep'
+
+# alias to apachectl
+alias apache="sudo apachectl"
 
 # better ls
 alias ls="ls -lahG"
@@ -10,4 +14,47 @@ alias ls="ls -lahG"
 alias ebash="e ${DOTFILES}"
 
 # edit apache conf
-alias econf="/etc/apache2/"
+alias econf="e /etc/apache2/"
+
+# edit etc hosts
+alias ehosts="e /etc/hosts"
+
+# flush dns cache
+alias flushcache="dscacheutil -flushcache"
+
+# pretty one line git log
+alias glog="git log --pretty=oneline"
+
+# what is my current ip
+alias myip="ifconfig en0 | grep 'inet '"
+
+# clean current npm directory
+alias npm-clean="rm -rf ./node_modules && npm install"
+
+# folder aliases (may vary by machine)
+alias ecold="s ecsite"
+alias ec="s ec"
+alias ecd="s ec-domain"
+alias ece="s ec-ember"
+alias dot="cd $(dirname ${DOTFILES})"
+
+# reload source
+alias reload="source ~/.zshrc"
+
+# rsync dotfiles
+alias refresh="~/my/dotfiles/bootstrap.sh -f && reload"
+
+# create blank space in dock
+alias blank="defaults write com.apple.dock persistent-apps -array-add '{\"tile-type\"=\"spacer-tile\";'} && killall Dock"
+
+# simple command line prompt
+alias cursor="export PS1='$ '"
+
+# find all dropbox conflicted files
+alias dropboxconflicts="bash <(curl -s https://raw.github.com/tjluoma/launchd-check-for-dropbox-conflicts/master/dropbox-launchd-conflicted-copy.sh)"
+
+# simple static http server
+alias server="python -m SimpleHTTPServer "
+
+#oh my zsh being stop being an asshole to bower
+alias bower="noglob bower"
