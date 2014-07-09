@@ -37,8 +37,11 @@ alias dropboxconflicts="bash <(curl -s https://raw.github.com/tjluoma/launchd-ch
 # simple static http server
 alias server="python -m SimpleHTTPServer "
 
-#oh my zsh being stop being an asshole to bower
+# oh my zsh being stop being an asshole to bower
 alias bower="noglob bower"
+
+# alias hub to git because its better
+eval "$(hub alias -s)"
 
 ##############
 # cd aliases #
