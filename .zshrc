@@ -7,7 +7,7 @@ ZSH_THEME="geoffgarside"
 # oh-my-zsh plugins
 plugins=(
 	git git-extras git-hubflow github gitignore \
-	rvm rails gem rails4 rake ruby \
+	rvm rails gem rake ruby \
 	heroku \
 	osx \
 	brew \
