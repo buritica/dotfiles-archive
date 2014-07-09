@@ -5,7 +5,18 @@ ZSH=$HOME/my/oh-my-zsh
 ZSH_THEME="geoffgarside"
 
 # oh-my-zsh plugins
-plugins=(git rails rvm osx lol)
+plugins=(
+	git git-extras git-hubflow github gitignore \
+	rvm rails gem rails4 rake ruby \
+	heroku \
+	osx \
+	brew \
+	bower \
+	lol \
+	common-aliases \
+	cp copydir copyfile \
+	npm nvm \
+)
 
 # source other profile files
 source $ZSH/oh-my-zsh.sh 
