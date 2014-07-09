@@ -9,7 +9,6 @@ plugins=(
 	git git-extras github \
 	heroku \
 	osx \
-	brew \
 	cp copydir copyfile \
 	npm \
 )
