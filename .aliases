@@ -1,6 +1,3 @@
-# go to dotfile folder
-alias dots="cd ~/my/dotfiles"
-
 # grep running processes
 alias pg='ps aux | grep'
 
@@ -9,15 +6,6 @@ alias apache="sudo apachectl"
 
 # better ls
 alias ls="ls -lahG"
-
-# easy edit dotfiles
-alias ebash="e ${DOTFILES}"
-
-# edit apache conf
-alias econf="e /etc/apache2/"
-
-# edit etc hosts
-alias ehosts="e /etc/hosts"
 
 # flush dns cache
 alias flushcache="dscacheutil -flushcache"
@@ -30,13 +18,6 @@ alias myip="ifconfig en0 | grep 'inet '"
 
 # clean current npm directory
 alias npm-clean="rm -rf ./node_modules && npm install"
-
-# folder aliases (may vary by machine)
-alias ecold="s ecsite"
-alias ec="s ec"
-alias ecd="s ec-domain"
-alias ece="s ec-ember"
-alias dot="cd $(dirname ${DOTFILES})"
 
 # reload source
 alias reload="source ~/.zshrc"
@@ -58,3 +39,25 @@ alias server="python -m SimpleHTTPServer "
 
 #oh my zsh being stop being an asshole to bower
 alias bower="noglob bower"
+
+##############
+# cd aliases #
+##############
+
+# go to dotfile folder
+alias dot="cd ~/my/dotfiles"
+alias my="cd ~/my"
+
+# source files
+alias ecold="s ecsite"
+alias ec="s ec"
+alias ecd="s ec-domain"
+alias ece="s ec-ember"
+
+##########################
+# open in editor aliases #
+##########################
+
+alias ebash="e ~/my/dotfiles/"
+alias econf="e /etc/apache2/"
+alias ehosts="e /etc/hosts"
