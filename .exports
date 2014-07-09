@@ -1,6 +1,3 @@
-# path for dotfiles
-export DOTFILES='$HOME/my/dotfiles'
-
 # default editor and alias
 export EDITOR='subl -w'
 

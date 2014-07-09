@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd "$(dirname "${DOTFILES}")";
+cd ~/my/dotfiles;
 
 git pull origin master;
 
