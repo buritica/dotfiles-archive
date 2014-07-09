@@ -6,16 +6,12 @@ ZSH_THEME="geoffgarside"
 
 # oh-my-zsh plugins
 plugins=(
-	git git-extras git-hubflow github gitignore \
-	rvm rails gem rake ruby \
+	git git-extras github \
 	heroku \
 	osx \
 	brew \
-	bower \
-	lol \
-	common-aliases \
 	cp copydir copyfile \
-	npm nvm \
+	npm \
 )
 
 # source other profile files
