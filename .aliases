@@ -49,13 +49,17 @@ eval "$(hub alias -s)"
 
 # go to dotfile folder
 alias dot="cd ~/my/dotfiles"
+alias dots="cd ~/my/dotfiles"
 alias my="cd ~/my"
 
-# source files
+# project files
 alias ecold="s ecsite"
 alias ec="s ec"
 alias ecd="s ec-domain"
 alias ece="s ec-ember"
+
+# my todo's
+alias doing="s doing"
 
 ##########################
 # open in editor aliases #
