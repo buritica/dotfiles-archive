@@ -59,7 +59,7 @@ alias ecd="s ec-domain"
 alias ece="s ec-ember"
 
 # my todo's
-alias doing="s doing"
+alias doing="~/my/doing"
 
 ##########################
 # open in editor aliases #
