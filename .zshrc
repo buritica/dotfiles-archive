@@ -14,8 +14,11 @@ plugins=(
 )
 
 # source other profile files
-source $ZSH/oh-my-zsh.sh 
+source $ZSH/oh-my-zsh.sh
 source /opt/boxen/env.sh
+
+# source private synced .env vars
+source ~/Dropbox/Sync/.env
 
 # Load the shell dotfiles, and then some:
 for file in ~/my/dotfiles/.{exports,aliases,functions}; do
