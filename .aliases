@@ -50,7 +50,10 @@ eval "$(hub alias -s)"
 # go to dotfile folder
 alias dot="cd ~/my/dotfiles"
 alias dots="cd ~/my/dotfiles"
+
+# common folders
 alias my="cd ~/my"
+alias dropbox="~/Dropbox"
 
 # project files
 alias ecold="s ecsite"
