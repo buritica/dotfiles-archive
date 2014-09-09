@@ -54,15 +54,18 @@ alias dots="cd ~/my/dotfiles"
 # common folders
 alias my="cd ~/my"
 alias dropbox="~/Dropbox"
+alias rbox="~/Dropbox\ \(Ride\)/"
 
 # project files
 alias ecold="s ecsite"
 alias ec="s ec"
 alias ecd="s ec-domain"
 alias ece="s ec-ember"
+alias ecapi="s ec-api"
 
 # my todo's
 alias doing="~/my/doing"
+alias eng="s engineering"
 
 ##########################
 # open in editor aliases #
@@ -72,3 +75,15 @@ alias ebash="e ~/my/dotfiles/"
 alias econf="e /etc/apache2/"
 alias ehosts="e /etc/hosts"
 alias eenv="e ~/Dropbox/Sync/.env"
+
+###############
+# ssh aliases #
+###############
+alias shome="ssh buritica.home"
+alias sride="ssh buritica.ride"
+
+#######
+# ghi #
+#######
+
+alias task="ghi open --claim -L task"
