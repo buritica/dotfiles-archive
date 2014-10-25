@@ -31,5 +31,6 @@ export PS1="🍔  $PS1"
 
 # file size limit
 ulimit -n 10000
+eval "$(direnv hook zsh)"
 
 echo "dotfiles sourced"
