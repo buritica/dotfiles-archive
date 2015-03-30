@@ -91,3 +91,8 @@ alias sride="ssh buritica.ride"
 #######
 
 alias task="ghi open --claim -L task"
+alias bug="ghi open -L bug"
+
+# ride
+
+alias product="s ride-product/"
