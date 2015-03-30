@@ -12,6 +12,7 @@ function doIt() {
 		--exclude ".aliases" \
 		--exclude ".exports" \
 		--exclude ".functions" \
+		--exclude ".osx" \
 		-avh --no-perms . ~;
 }
 
