@@ -135,3 +135,23 @@ function o() {
 function tre() {
   tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+
+#ride
+# `p` with no arguments cds into ~/src/ride-product directory, otherwise opens the given subdir
+function p() {
+  if [ $# -eq 0 ]; then
+    cd ~/src/ride-product;
+  else
+    cd ~/src/ride-product"$@";
+  fi;
+}
+
+# `r` with no arguments cds into ~/src/ride directory, otherwise opens the given subdir
+function r() {
+  if [ $# -eq 0 ]; then
+    cd ~/src/ride;
+  else
+    cd ~/src/ride"$@";
+  fi;
+}
