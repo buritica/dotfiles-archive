@@ -143,7 +143,7 @@ function p() {
   if [ $# -eq 0 ]; then
     cd ~/src/ride-product;
   else
-    cd ~/src/ride-product"$@";
+    cd ~/src/ride-product/"$@";
   fi;
 }
 
@@ -152,6 +152,6 @@ function r() {
   if [ $# -eq 0 ]; then
     cd ~/src/ride;
   else
-    cd ~/src/ride"$@";
+    cd ~/src/ride/"$@";
   fi;
 }
