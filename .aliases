@@ -54,7 +54,8 @@ alias dots="cd ~/my/dotfiles"
 
 # common folders
 alias my="cd ~/my"
-alias d="~/Dropbox"
+alias d="~/Downloads"
+alias db="~/Dropbox"
 alias rbox="~/Dropbox\ \(Ride\)/"
 
 # project files
