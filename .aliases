@@ -88,8 +88,9 @@ alias sride="ssh buritica.ride"
 # ghi #
 #######
 
-alias task="ghi open --claim -L task"
+alias task="ghi open --claim"
 alias bug="ghi open -L bug"
+alias ariel="ghi open -u arielnaomi"
 
 ## FROM MATHIAS DOTFILES ##
 
