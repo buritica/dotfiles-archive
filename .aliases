@@ -67,7 +67,8 @@ alias ecapi="s ec-api"
 
 # my todo's
 alias doing="~/my/doing"
-alias eng="s engineering"
+alias eng="s ride/engineering"
+alias mgt="s ride/eng-mgt"
 
 ##########################
 # open in editor aliases #
