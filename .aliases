@@ -167,3 +167,7 @@ alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v exten
 
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
+# remote connection aliaess
+alias staging-redis="redis-cli -p $REDIS_PORT_STAGING -h $REDIS_HOST_STAGING -a $REDIS_SECRET_STAGING"
+
