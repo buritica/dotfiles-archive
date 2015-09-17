@@ -10,6 +10,9 @@ alias ls="ls -lahG"
 # pretty one line git log
 alias glog="git log --pretty=oneline"
 
+# fix some git shit
+alias fixit="git add . && git commit --amend --no-edit && git push -f"
+
 # what is my current ip
 alias myip="ifconfig en0 | grep 'inet '"
 
@@ -171,3 +174,5 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 # remote connection aliaess
 alias staging-redis="redis-cli -p $REDIS_PORT_STAGING -h $REDIS_HOST_STAGING -a $REDIS_SECRET_STAGING"
 
+# boxen stuff
+alias mongo="mongo --port $BOXEN_MONGODB_PORT"
