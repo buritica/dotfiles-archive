@@ -175,4 +175,4 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 alias staging-redis="redis-cli -p $REDIS_PORT_STAGING -h $REDIS_HOST_STAGING -a $REDIS_SECRET_STAGING"
 
 # boxen stuff
-alias mongo="mongo --port $BOXEN_MONGODB_PORT"
+alias lmongo="mongo --port $BOXEN_MONGODB_PORT"
