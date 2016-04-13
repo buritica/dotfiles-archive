@@ -94,6 +94,8 @@ alias sride="ssh buritica.ride"
 
 alias task="ghi open --claim"
 alias bug="ghi open -L bug"
+alias talk="ghi open -L blog"
+alias talk="ghi open -L talk"
 alias ariel="ghi open -u arielnaomi"
 
 ## FROM MATHIAS DOTFILES ##
