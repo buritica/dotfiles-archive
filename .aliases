@@ -59,19 +59,18 @@ alias dots="cd ~/my/dotfiles"
 alias my="cd ~/my"
 alias d="~/Downloads"
 alias db="~/Dropbox"
-alias rbox="~/Dropbox\ \(Ride\)/"
 
 # project files
-alias ecold="s ecsite"
-alias ec="s ec"
-alias ecd="s ec-domain"
-alias ece="s ec-ember"
-alias ecapi="s ec-api"
+alias ecold="s enc/old"
+alias ec="s enc/ec"
+alias ecd="s enc/ec-domain"
+alias ece="s enc/ec-ember"
+alias ecapi="s enc/ec-api"
 
 # my todo's
 alias doing="~/my/doing"
-alias eng="s ride/engineering"
-alias mgt="s ride/eng-mgt"
+# alias eng="s ride/engineering"
+# alias mgt="s ride/eng-mgt"
 
 ##########################
 # open in editor aliases #
@@ -94,7 +93,7 @@ alias sride="ssh buritica.ride"
 
 alias task="ghi open --claim"
 alias bug="ghi open -L bug"
-alias talk="ghi open -L blog"
+alias blog="ghi open -L blog"
 alias talk="ghi open -L talk"
 alias ariel="ghi open -u arielnaomi"
 
