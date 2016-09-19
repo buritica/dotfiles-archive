@@ -17,6 +17,16 @@ function s() {
 	fi;
 }
 
+# `sp` with no arguments cds into ~/src/splice directory, otherwise opens the given subdir
+function s() {
+	if [ $# -eq 0 ]; then
+		cd ~/src/splice;
+	else
+		cd ~/src/splice/"$@";
+	fi;
+}
+
+
 # node command with ./lib in NODE_PATH
 lode() {
   NODE_PATH=./lib node $*
@@ -33,7 +43,7 @@ todo() {
 }
 
 # turn movie into gif
-# thankx SlexAxton https://gist.github.com/SlexAxton/4989674
+# thanx SlexAxton https://gist.github.com/SlexAxton/4989674
 gifify() {
   if [[ -n "$1" ]]; then
     if [[ $2 == '--good' ]]; then
