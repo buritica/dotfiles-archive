@@ -18,7 +18,7 @@ function s() {
 }
 
 # `sp` with no arguments cds into ~/src/splice directory, otherwise opens the given subdir
-function s() {
+function sp() {
 	if [ $# -eq 0 ]; then
 		cd ~/src/splice;
 	else
