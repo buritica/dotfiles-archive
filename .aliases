@@ -55,6 +55,9 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo 
 alias dot="cd ~/my/dotfiles"
 alias dots="cd ~/my/dotfiles"
 
+# go to puppet folder
+alias buritica="s boxen/puppet-buritica"
+
 # common folders
 alias my="cd ~/my"
 alias d="~/Downloads"
