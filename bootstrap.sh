@@ -13,6 +13,7 @@ function doIt() {
 		--exclude ".exports" \
 		--exclude ".functions" \
 		--exclude ".osx" \
+		--exclude "buritica.itermcolors" \
 		-avh --no-perms . ~;
 }
 

@@ -69,8 +69,10 @@ alias ecapi="s enc/ec-api"
 
 # my todo's
 alias doing="~/my/doing"
-# alias eng="s ride/engineering"
-# alias mgt="s ride/eng-mgt"
+
+# work
+alias eng="sp eng"
+alias mgt="sp mgt"
 
 ##########################
 # open in editor aliases #
@@ -80,12 +82,6 @@ alias ebash="e ~/my/dotfiles/"
 alias econf="e /etc/apache2/"
 alias ehosts="e /etc/hosts"
 alias eenv="e ~/Dropbox/Sync/.env"
-
-###############
-# ssh aliases #
-###############
-alias shome="ssh buritica.home"
-alias sride="ssh buritica.ride"
 
 #######
 # ghi #
