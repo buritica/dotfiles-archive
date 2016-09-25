@@ -17,6 +17,15 @@ function s() {
 	fi;
 }
 
+# `dr` with no arguments cds into iCloud Drive  directory, otherwise opens the given subdir
+function dr() {
+	if [ $# -eq 0 ]; then
+		cd ~/Library/Mobile\ Documents/com~apple~CloudDocs;
+	else
+		cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/"$@";
+	fi;
+}
+
 # `sp` with no arguments cds into ~/src/splice directory, otherwise opens the given subdir
 function sp() {
 	if [ $# -eq 0 ]; then
