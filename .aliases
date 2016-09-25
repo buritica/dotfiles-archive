@@ -57,6 +57,7 @@ alias dots="cd ~/my/dotfiles"
 
 # go to puppet folder
 alias buritica="s boxen/puppet-buritica"
+alias eburitica="e ~/src/boxen/puppet-buritica"
 
 # common folders
 alias my="cd ~/my"
