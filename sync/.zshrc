@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh configuration.
-ZSH=$HOME/oh-my-zsh
+ZSH=$HOME/my/oh-my-zsh
 
 # Set name of the theme to load.
 ZSH_THEME="geoffgarside"
@@ -31,7 +31,11 @@ export PS1="🍔  $PS1"
 
 # file size limit
 ulimit -n 10000
-eval "$(direnv hook zsh)"
+
+# enable direnv
+if hash direnv 2>/dev/null; then
+	eval "$(direnv hook zsh)"
+fi
 
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
