@@ -41,7 +41,9 @@ alias server="python -m SimpleHTTPServer "
 alias bower="noglob bower"
 
 # alias hub to git because its better
-eval "$(hub alias -s)"
+if hash hub 2>/dev/null; then
+  eval "$(hub alias -s)"
+fi
 
 # Empty the Trash on all mounted volumes and the main HDD
 # Also, clear Apple’s System Logs to improve shell startup speed
