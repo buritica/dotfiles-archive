@@ -1,26 +1,8 @@
-# [hub]
-# protocol = https
-
-# [credential]
-# helper = /opt/boxen/bin/boxen-git-credential
-
-# [core]
-# excludesfile = /opt/boxen/config/git/gitignore
-# [user]
-#   name = Juan Pablo Buritica
-#   email = buritica@gmail.com
-# [push]
-#   default = simple
-# [github]
-#   user = buritica
-# [ghi]
-#   token = !security find-internet-password -a buritica -s github.com -l 'ghi token' -w
-
 [hub]
   protocol = https
 
 [credential]
-  helper = /opt/boxen/bin/boxen-git-credential
+  # helper = /opt/boxen/bin/boxen-git-credential
 
 [user]
   name = Juan Pablo Buritica
@@ -104,7 +86,7 @@
 [core]
 
   # Use custom `.gitignore` and `.gitattributes`
-  excludesfile = /opt/boxen/config/git/gitignore
+  excludesfile = ~/.gitignore
 
   # Make `git rebase` safer on OS X
   # More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>

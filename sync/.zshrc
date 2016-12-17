@@ -15,10 +15,10 @@ plugins=(
 
 # source other profile files
 source $ZSH/oh-my-zsh.sh
-source /opt/boxen/env.sh
 
 # source private synced .env vars
-source ~/Dropbox/Sync/.env
+# I used to keep gh oauth token here, but it's no longer needed (or safe)
+# source ~/Dropbox/Sync/.env
 
 # Load the shell dotfiles, and then some:
 for file in ~/my/dotfiles/.{exports,aliases,functions}; do
@@ -44,4 +44,3 @@ elif [ -f /etc/bash_completion ]; then
 fi;
 
 echo "dotfiles sourced"
-

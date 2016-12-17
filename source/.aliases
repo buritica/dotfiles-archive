@@ -55,15 +55,6 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo 
 alias dot="cd ~/my/dotfiles"
 alias dots="cd ~/my/dotfiles"
 
-# go to puppet folder
-alias buritica="s boxen/puppet-buritica"
-alias eburitica="e ~/src/boxen/puppet-buritica"
-
-# common folders
-alias my="cd ~/my"
-alias d="~/Downloads"
-alias db="~/Dropbox"
-
 # project files
 alias ecold="s enc/old"
 alias ec="s enc/ec"
@@ -100,7 +91,7 @@ alias ariel="ghi open -u arielnaomi"
 ## FROM MATHIAS DOTFILES ##
 
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew boxen-upgrade; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update'
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update'
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -171,9 +162,3 @@ alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v exten
 
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
-
-# remote connection aliaess
-alias staging-redis="redis-cli -p $REDIS_PORT_STAGING -h $REDIS_HOST_STAGING -a $REDIS_SECRET_STAGING"
-
-# boxen stuff
-alias lmongo="mongo --port $BOXEN_MONGODB_PORT"
