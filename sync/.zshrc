@@ -27,6 +27,7 @@ done;
 unset file;
 
 # i like burgers
+contains $HOST "crowntail" && export PS1="🏡  $PS1"
 export PS1="🍔  $PS1"
 
 # file size limit
