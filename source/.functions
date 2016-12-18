@@ -17,6 +17,15 @@ function s() {
 	fi;
 }
 
+# `my` with no arguments cds into ~/.my directory, otherwise opens the given subdir
+function my() {
+	if [ $# -eq 0 ]; then
+		cd ~/.my;
+	else
+		cd ~/.my/"$@";
+	fi;
+}
+
 # `dr` with no arguments cds into iCloud Drive  directory, otherwise opens the given subdir
 function dr() {
 	if [ $# -eq 0 ]; then
