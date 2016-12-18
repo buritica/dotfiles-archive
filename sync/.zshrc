@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh configuration.
-ZSH=$HOME/my/oh-my-zsh
+ZSH=$HOME/.my/oh-my-zsh
 
 # Set name of the theme to load.
 ZSH_THEME="geoffgarside"
@@ -21,7 +21,7 @@ source $ZSH/oh-my-zsh.sh
 # source ~/Dropbox/Sync/.env
 
 # Load the shell dotfiles, and then some:
-for file in ~/my/dotfiles/source/.{exports,aliases,functions}; do
+for file in ~/.my/dotfiles/source/.{exports,aliases,functions}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;

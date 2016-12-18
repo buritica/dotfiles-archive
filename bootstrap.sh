@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd ~/my/dotfiles/sync;
+cd ~/.my/dotfiles/sync;
 
 git pull origin master;
 

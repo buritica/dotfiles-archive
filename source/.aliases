@@ -23,7 +23,7 @@ alias npm-clean="rm -rf ./node_modules && npm install"
 alias reload="source ~/.zshrc"
 
 # rsync dotfiles
-alias refresh="~/my/dotfiles/bootstrap.sh -f && reload"
+alias refresh="~/.my/dotfiles/bootstrap.sh -f && reload"
 
 # create blank space in dock
 alias blank="defaults write com.apple.dock persistent-apps -array-add '{\"tile-type\"=\"spacer-tile\";'} && killall Dock"
@@ -54,8 +54,8 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo 
 ##############
 
 # go to dotfile folder
-alias dot="cd ~/my/dotfiles"
-alias dots="cd ~/my/dotfiles"
+alias dot="cd ~/.my/dotfiles"
+alias dots="cd ~/.my/dotfiles"
 
 # project files
 alias ecold="s enc/old"
@@ -65,7 +65,7 @@ alias ece="s enc/ec-ember"
 alias ecapi="s enc/ec-api"
 
 # my todo's
-alias doing="~/my/doing"
+alias doing="~/.my/doing"
 
 # work
 alias eng="sp eng"
@@ -75,7 +75,7 @@ alias mgt="sp mgt"
 # open in editor aliases #
 ##########################
 
-alias ebash="e ~/my/dotfiles/"
+alias ebash="e ~/.my/dotfiles/"
 alias econf="e /etc/apache2/"
 alias ehosts="e /etc/hosts"
 alias eenv="e ~/Dropbox/Sync/.env"
