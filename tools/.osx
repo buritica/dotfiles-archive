@@ -664,7 +664,7 @@ defaults write com.apple.terminal SecureKeyboardEntry -bool true
 # Disable the annoying line marks
 defaults write com.apple.Terminal ShowLineMarks -int 0
 
-# Install the Solarized Dark theme for iTerm
+# Install my theme for iTerm
 open "${HOME}/.my/dotfiles/tools/buritica.itermcolors"
 
 # Don’t display the annoying prompt when quitting iTerm
