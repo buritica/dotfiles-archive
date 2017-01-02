@@ -48,6 +48,12 @@ defaults write com.apple.systemuiserver menuExtras -array \
 # show input source
 defaults write com.apple.systemuiserver "NSStatusItem Visible com.apple.menuextra.textinput" -bool true
 
+# set language sources
+defaults import com.apple.HIToolbox ~/.my/dotfiles/tools/plists/com.apple.HIToolbox.plist
+
+# set my shortcuts
+defaults import com.apple.symbolichotkeys ~/.my/dotfiles/tools/plists/com.apple.symbolichotkeys.plist
+
 # Set highlight color to green
 defaults write NSGlobalDomain AppleHighlightColor -string "0.764700 0.976500 0.568600"
 
