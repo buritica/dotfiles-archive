@@ -32,7 +32,7 @@ sudo nvram SystemAudioVolume=" "
 defaults write com.apple.universalaccess reduceTransparency -bool true
 
 # Menu bar: hide the Time Machine and User icons
-defaults write "${domain}" -currentHost dontAutoLoad -array \
+defaults write -currentHost dontAutoLoad -array \
 		"/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
 		"/System/Library/CoreServices/Menu Extras/User.menu"
 
