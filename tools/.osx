@@ -48,6 +48,9 @@ defaults import com.apple.HIToolbox ~/.my/dotfiles/tools/plists/com.apple.HITool
 # set my shortcuts
 defaults import com.apple.symbolichotkeys ~/.my/dotfiles/tools/plists/com.apple.symbolichotkeys.plist
 
+# set my login items
+defaults import com.apple.loginitems ~/.my/dotfiles/tools/plists/com.apple.loginitems.plist
+
 # Set highlight color to green
 defaults write NSGlobalDomain AppleHighlightColor -string "0.764700 0.976500 0.568600"
 
