@@ -45,9 +45,8 @@ defaults write com.apple.systemuiserver menuExtras -array \
 	"/System/Library/CoreServices/Menu Extras/Clock.menu" \
 	"/System/Library/CoreServices/Menu Extras/TextInput.menu"
 
-# add spanish as an input source
+# show input source
 defaults write com.apple.systemuiserver "NSStatusItem Visible com.apple.menuextra.textinput" -bool true
-defaults write com.apple.HIToolbox.plist AppleEnabledInputSources -array-add '<dict><key>InputSourceKind</key><string>Keyboard Layout</string><key>KeyboardLayout ID</key><integer>8</integer><key>KeyboardLayout Name</key><string>Spanish</string></dict>'
 
 # Set highlight color to green
 defaults write NSGlobalDomain AppleHighlightColor -string "0.764700 0.976500 0.568600"
