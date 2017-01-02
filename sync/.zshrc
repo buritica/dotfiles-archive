@@ -29,6 +29,8 @@ unset file;
 # i like burgers
 contains $HOST "crowntail" && export PS1="🏡  $PS1"
 contains $HOST "deltatail" && export PS1="💼  $PS1"
+contains $HOST "halfmoon" && export PS1="🎥  $PS1"
+contains $HOST "rosetail" && export PS1="📺  $PS1"
 contains $HOST "test" && export PS1="🔬  $PS1"
 export PS1="🍔  $PS1"
 
