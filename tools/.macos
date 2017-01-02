@@ -51,6 +51,9 @@ defaults import com.apple.symbolichotkeys ~/.my/dotfiles/tools/plists/com.apple.
 # set my login items
 defaults import com.apple.loginitems ~/.my/dotfiles/tools/plists/com.apple.loginitems.plist
 
+# set iterm2 preferences
+defaults import com.googlecode.iterm2 ~/.my/dotfiles/tools/plists/com.googlecode.iterm2.plist
+
 # Set highlight color to green
 defaults write NSGlobalDomain AppleHighlightColor -string "0.764700 0.976500 0.568600"
 
