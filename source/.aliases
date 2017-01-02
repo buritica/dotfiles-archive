@@ -23,7 +23,7 @@ alias npm-clean="rm -rf ./node_modules && npm install"
 alias reload="source ~/.zshrc"
 
 # rsync dotfiles
-alias refresh="~/my/dotfiles/bootstrap.sh -f && reload"
+alias refresh="~/.my/dotfiles/bootstrap.sh -f && reload"
 
 # create blank space in dock
 alias blank="defaults write com.apple.dock persistent-apps -array-add '{\"tile-type\"=\"spacer-tile\";'} && killall Dock"
@@ -41,7 +41,9 @@ alias server="python -m SimpleHTTPServer "
 alias bower="noglob bower"
 
 # alias hub to git because its better
-eval "$(hub alias -s)"
+if hash hub 2>/dev/null; then
+  eval "$(hub alias -s)"
+fi
 
 # Empty the Trash on all mounted volumes and the main HDD
 # Also, clear Apple’s System Logs to improve shell startup speed
@@ -52,17 +54,11 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo 
 ##############
 
 # go to dotfile folder
-alias dot="cd ~/my/dotfiles"
-alias dots="cd ~/my/dotfiles"
+alias dot="cd ~/.my/dotfiles"
+alias dots="cd ~/.my/dotfiles"
 
-# go to puppet folder
-alias buritica="s boxen/puppet-buritica"
-alias eburitica="e ~/src/boxen/puppet-buritica"
-
-# common folders
-alias my="cd ~/my"
-alias d="~/Downloads"
-alias db="~/Dropbox"
+# go to provision folder
+alias provision="cd ~/.my/provision"
 
 # project files
 alias ecold="s enc/old"
@@ -72,7 +68,7 @@ alias ece="s enc/ec-ember"
 alias ecapi="s enc/ec-api"
 
 # my todo's
-alias doing="~/my/doing"
+alias doing="~/.my/doing"
 
 # work
 alias eng="sp eng"
@@ -82,7 +78,7 @@ alias mgt="sp mgt"
 # open in editor aliases #
 ##########################
 
-alias ebash="e ~/my/dotfiles/"
+alias ebash="e ~/.my/dotfiles/"
 alias econf="e /etc/apache2/"
 alias ehosts="e /etc/hosts"
 alias eenv="e ~/Dropbox/Sync/.env"
@@ -100,7 +96,7 @@ alias ariel="ghi open -u arielnaomi"
 ## FROM MATHIAS DOTFILES ##
 
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew boxen-upgrade; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update'
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update'
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -171,9 +167,3 @@ alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v exten
 
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
-
-# remote connection aliaess
-alias staging-redis="redis-cli -p $REDIS_PORT_STAGING -h $REDIS_HOST_STAGING -a $REDIS_SECRET_STAGING"
-
-# boxen stuff
-alias lmongo="mongo --port $BOXEN_MONGODB_PORT"

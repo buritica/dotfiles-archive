@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh configuration.
-ZSH=$HOME/my/oh-my-zsh
+ZSH=$HOME/.my/oh-my-zsh
 
 # Set name of the theme to load.
 ZSH_THEME="geoffgarside"
@@ -15,23 +15,30 @@ plugins=(
 
 # source other profile files
 source $ZSH/oh-my-zsh.sh
-source /opt/boxen/env.sh
 
 # source private synced .env vars
-source ~/Dropbox/Sync/.env
+# I used to keep gh oauth token here, but it's no longer needed (or safe)
+# source ~/Dropbox/Sync/.env
 
 # Load the shell dotfiles, and then some:
-for file in ~/my/dotfiles/.{exports,aliases,functions}; do
+for file in ~/.my/dotfiles/source/.{exports,aliases,functions}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
 
 # i like burgers
+contains $HOST "crowntail" && export PS1="🏡  $PS1"
+contains $HOST "deltatail" && export PS1="💼  $PS1"
+contains $HOST "test" && export PS1="🔬  $PS1"
 export PS1="🍔  $PS1"
 
 # file size limit
 ulimit -n 10000
-eval "$(direnv hook zsh)"
+
+# enable direnv
+if hash direnv 2>/dev/null; then
+	eval "$(direnv hook zsh)"
+fi
 
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
@@ -44,4 +51,3 @@ elif [ -f /etc/bash_completion ]; then
 fi;
 
 echo "dotfiles sourced"
-
