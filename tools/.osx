@@ -31,17 +31,23 @@ sudo nvram SystemAudioVolume=" "
 # Disable transparency in the menu bar and elsewhere on Yosemite
 defaults write com.apple.universalaccess reduceTransparency -bool true
 
-# Menu bar: hide the Time Machine, Volume, and User icons
-for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
-	defaults write "${domain}" dontAutoLoad -array \
+# Menu bar: hide the Time Machine and User icons
+defaults write "${domain}" -currentHost dontAutoLoad -array \
 		"/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
 		"/System/Library/CoreServices/Menu Extras/User.menu"
-done
+
+# Set default icons on menu bar
 defaults write com.apple.systemuiserver menuExtras -array \
 	"/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
 	"/System/Library/CoreServices/Menu Extras/AirPort.menu" \
 	"/System/Library/CoreServices/Menu Extras/Battery.menu" \
-	"/System/Library/CoreServices/Menu Extras/Clock.menu"
+	"/System/Library/CoreServices/Menu Extras/Volume.menu" \
+	"/System/Library/CoreServices/Menu Extras/Clock.menu" \
+	"/System/Library/CoreServices/Menu Extras/TextInput.menu"
+
+# add spanish as an input source
+defaults write com.apple.systemuiserver "NSStatusItem Visible com.apple.menuextra.textinput" -bool true
+defaults write com.apple.HIToolbox.plist AppleEnabledInputSources -array-add '<dict><key>InputSourceKind</key><string>Keyboard Layout</string><key>KeyboardLayout ID</key><integer>8</integer><key>KeyboardLayout Name</key><string>Spanish</string></dict>'
 
 # Set highlight color to green
 defaults write NSGlobalDomain AppleHighlightColor -string "0.764700 0.976500 0.568600"
