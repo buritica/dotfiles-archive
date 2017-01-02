@@ -73,7 +73,7 @@ defaults import com.apple.HIToolbox ~/.my/dotfiles/tools/plists/com.apple.HITool
 defaults import com.apple.symbolichotkeys ~/.my/dotfiles/tools/plists/com.apple.symbolichotkeys.plist
 
 # set my login items
-defaults import com.apple.loginitems ~/.my/dotfiles/tools/plists/com.apple.loginitems.plist
+# defaults import com.apple.loginitems ~/.my/dotfiles/tools/plists/com.apple.loginitems.plist
 
 # set iterm2 preferences
 defaults import com.googlecode.iterm2 ~/.my/dotfiles/tools/plists/com.googlecode.iterm2.plist
