@@ -13,11 +13,35 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 ###############################################################################
+# Energy Saver                                                                #
+###############################################################################
+
+# Set Display Sleep 15 Minutes
+sudo pmset -a displaysleep 15
+
+# Set System Sleep 15 Minutes [battery]
+sudo pmset -b sleep 15
+
+# Wake for access [charger]
+sudo pmset -c womp 1
+
+# Set standby delay to 3 hours (default is 1 hour)
+sudo pmset -a standbydelay 10800
+
+###############################################################################
 # General UI/UX                                                               #
 ###############################################################################
 
-# Set standby delay to 24 hours (default is 1 hour)
-sudo pmset -a standbydelay 86400
+
+# Enable wake for access
+sudo pmset womp 1
+
+# Enable powernap for plugged machines, disable for battery
+sudo pmset -c powernap 1
+sudo pmset -b powernap 0
+
+# Autorestart UPS machines
+sudo pmset -u autorestart 1
 
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
@@ -193,6 +217,10 @@ launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/nul
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
+# Disable screensaver
+defaults write com.apple.screensaver idleTime -int 0
+defaults -currentHost write com.apple.screensaver idleTime -int 0
+
 # Save screenshots to the desktop
 defaults write com.apple.screencapture location -string "${HOME}/Desktop"
 
@@ -286,8 +314,8 @@ defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 /usr/libexec/PlistBuddy -c "Set DesktopViewSettings:IconViewSettings:labelOnBottom false" ~/Library/Preferences/com.apple.finder.plist
 
 # Enable snap-to-grid for icons on the desktop and in other icon views
-/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
-/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy name" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy name" ~/Library/Preferences/com.apple.finder.plist
 
 # Increase grid spacing for icons on the desktop and in other icon views
 /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:gridSpacing 60" ~/Library/Preferences/com.apple.finder.plist
