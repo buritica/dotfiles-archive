@@ -26,7 +26,7 @@ sudo pmset -b sleep 15
 sudo pmset -c womp 1
 
 # Set standby delay to 3 hours (default is 1 hour)
-sudo pmset -a standbydelay 10800
+sudo pmset -a standbydelay 86400
 
 ###############################################################################
 # General UI/UX                                                               #
