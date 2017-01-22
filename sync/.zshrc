@@ -45,6 +45,11 @@ fi
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
+# add yarn t the `$PATH`
+if hash yarn 2>/dev/null; then
+  export PATH="$PATH:`yarn global bin`"
+fi
+
 # Add tab completion for many Bash commands
 if which brew > /dev/null && [ -f "$(brew --prefix)/etc/bash_completion" ]; then
   source "$(brew --prefix)/etc/bash_completion";
