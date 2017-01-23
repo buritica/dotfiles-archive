@@ -48,7 +48,6 @@ export PATH="$HOME/bin:$PATH";
 # add nodenv to the `$PATH`
 if hash nodenv 2>/dev/null; then
   eval "$(nodenv init -)"
-  export PATH="$HOME/.nodenv/bin:$PATH"
 fi
 
 # add yarn to the `$PATH`
