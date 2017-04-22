@@ -89,8 +89,9 @@ alias eenv="e ~/Dropbox/Sync/.env"
 
 alias task="ghi open --claim"
 alias bug="ghi open -L bug"
-alias blog="ghi open -L blog"
-alias talk="ghi open -L talk"
+alias blog="ghi open -L write --claim"
+alias write="ghi open -L write --claim"
+alias talk="ghi open -L talk --claim"
 alias ariel="ghi open -u arielnaomi"
 
 ## FROM MATHIAS DOTFILES ##
