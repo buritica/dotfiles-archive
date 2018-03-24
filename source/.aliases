@@ -13,9 +13,6 @@ alias glog="git log --pretty=oneline"
 # fix some git shit
 alias fixit="git add . && git commit --amend --no-edit && git push -f"
 
-# what is my current ip
-alias myip="ifconfig en0 | grep 'inet '"
-
 # clean current npm directory
 alias npm-clean="rm -rf ./node_modules && npm install"
 

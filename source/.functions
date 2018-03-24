@@ -1,10 +1,10 @@
-# `e` with no arguments opens the current directory in Atom, otherwise
+# `e` with no arguments opens the current directory in VSCode, otherwise
 # opens the given location
 function e() {
 	if [ $# -eq 0 ]; then
-		atom .;
+		code .;
 	else
-		atom "$@";
+		code "$@";
 	fi;
 }
 
@@ -42,16 +42,6 @@ function sp() {
 	else
 		cd ~/src/splice/"$@";
 	fi;
-}
-
-# node command with ./lib in NODE_PATH
-lode() {
-  NODE_PATH=./lib node $*
-}
-
-# nodemon command with ./lib in NODE_PATH
-lodemon() {
-  NODE_PATH=./lib nodemon $*
 }
 
 # empty commit as todo
